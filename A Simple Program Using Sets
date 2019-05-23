@@ -1,0 +1,23 @@
+baseball_team = set(["Jodi", "Carmen", "Aida", "Alicia"])
+basketball_team = set(["Eva", "Carmen", "Alicia", "Sarah"])
+print("The Following Students Are On The Baseball Team:")
+for var in baseball_team:
+    print(var)
+print("The Following Students Are On The Basketball Team:")
+for var in baseball_team:
+    print(var)
+print("The Following Students Play Both Basketball And Baseball:")
+for name in basketball_team.intersection(baseball_team):
+    print(name)
+print("The Following Students Play Basketball OR Baseball either:")
+for name in baseball_team.union(basketball_team):
+    print(name)
+print("The Following Students Play Baseball But Not Basketball:")
+for name in baseball_team.difference(basketball_team):
+    print(name)
+print("The Following Students Play Basketball But Not Baseball:")
+for name in basketball_team.difference(baseball_team):
+    print(name)
+print("The Following Students Play One Sport But Not Both:")
+for name in baseball_team.symmetric_difference(basketball_team):
+    print(name)
